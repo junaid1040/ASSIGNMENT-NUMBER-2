@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoboTech – Smart Robotics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>RoboTech</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#models">Models</a>
+      <a href="#order">Order</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Our Robots</h2>
+      <p>RoboTech builds smart home and service robots to make life easier. Our bots clean, assist, and even learn new tasks using AI technology.</p>
+    </section>
+
+    <section id="models" class="grid">
+      <article class="card">
+        <h3>Home Assistant</h3>
+        <p>A robot that helps with chores and reminders.</p>
+      </article>
+      <article class="card">
+        <h3>Security Bot</h3>
+        <p>Monitors your home with night vision and alerts.</p>
+      </article>
+      <article class="card">
+        <h3>Delivery Bot</h3>
+        <p>Delivers small packages around your office or home.</p>
+      </article>
+    </section>
+
+    <section id="order">
+      <h2>Pre-Order Your Robot</h2>
+      <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <fieldset>
+          <legend>Choose Model</legend>
+          <label><input type="radio" name="model" value="assistant"> Home Assistant</label>
+          <label><input type="radio" name="model" value="security"> Security Bot</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Extras</legend>
+          <label><input type="checkbox" name="features" value="camera"> HD Camera</label>
+          <label><input type="checkbox" name="features" value="voice"> Voice Control</label>
+          <label><input type="checkbox" name="features" value="solar"> Solar Charger</label>
+        </fieldset>
+
+        <label for="plan">Select Plan:</label>
+        <select id="plan" name="plan">
+          <option>Basic</option>
+          <option>Premium</option>
+          <option>Enterprise</option>
+        </select>
+
+        <label for="message">Additional Notes:</label>
+        <textarea id="message" rows="3" placeholder="Write here..."></textarea>
+
+        <button type="submit">Submit Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 RoboTech | Designed for Assignment 02</p>
+  </footer>
+</body>
+</html>
